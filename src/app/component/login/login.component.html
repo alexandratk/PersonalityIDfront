@@ -1,0 +1,25 @@
+<form 
+    class="card" 
+    [formGroup]="form" 
+    (ngSubmit)="onSubmit()"
+>
+    <div class="login">
+        <input 
+            formControlName="login" 
+            id="login" 
+            type="email"
+        >
+        <label>Login</label>
+    </div>
+    <div class="password">
+        <input 
+            formControlName="password" 
+            id="password" 
+            type="password"
+        >
+        <label>Password</label>
+    </div>
+    <button type="submit" class="">
+        Enter
+    </button>
+</form>
